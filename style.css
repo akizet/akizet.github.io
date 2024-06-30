@@ -20,7 +20,7 @@ div {
   display: inline-block;
   padding-left: 1em;
   padding-right: 1em;
-  max-width: 50vw;
+  max-width: 75vw;
   border: 2px dashed;
 }
 .left {
