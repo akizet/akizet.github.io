@@ -37,7 +37,10 @@ div {
   background-color: var(--rght-back);
   color: var(--rght-text);
 }
-a {font-weight: bold;}
+a {
+  text-decoration: 2px dotted underline;
+  font-weight: bold;
+}
 .left a {color: var(--left-href);}
 .right a {color: var(--rght-href);}
 .left small {color: var(--left-smal);}
