@@ -1,21 +1,26 @@
 :root {
-  --glob-back: #1e1e2e;
-  --left-text: #cdd6f4;
-  --left-href: #cba6f7;
+  --glob-back: #1e1e2e; /* mocha base */
+  --left-text: #cdd6f4; /* mocha text */
+  --left-href: #cba6f7; /* mocha mauve */
+  --left-bold: #f38ba8; /* mocha red */
+  --left-smal: #bac2de; /* mocha subtext 1 */
 
-  --rght-back: #eff1f5;
-  --rght-text: #4c4f69;
-  --rght-href: #8839ef;
+  --rght-back: #eff1f5; /* latte base */
+  --rght-text: #4c4f69; /* latte text */
+  --rght-href: #8839ef; /* latte mauve */
+  --rght-bold: #d20f39; /* latte red */
+  --rght-smal: #5c5f77; /* latte subtext 1 */
 }
 body {
-  background-color: var(--glob-back);
   margin-left: 0;
   margin-right: 0;
 }
+body, .right h2 {background-color: var(--glob-back);}
 div {
   display: inline-block;
   padding-left: 1em;
   padding-right: 1em;
+  max-width: 50vw;
   border: 2px dashed;
 }
 .left {
@@ -35,3 +40,14 @@ div {
 a {font-weight: bold;}
 .left a {color: var(--left-href);}
 .right a {color: var(--rght-href);}
+.left small {color: var(--left-smal);}
+.right small {color: var(--rght-smal);}
+.left b, .right h2 {color: var(--left-bold);}
+.right b {color: var(--rght-bold);}
+.right h2 {
+  font-size: inherit;
+  font-variant: small-caps;
+  border: 2px dashed var(--rght-back);
+}
+.right h2, .sans {font-family: Sans-Serif;}
+.right h2, .center {text-align: center;}
