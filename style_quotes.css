@@ -64,3 +64,15 @@ div.andrew {
 .andrew :is(.wide, .tall) {display: inline-block;}
 .andrew .wide {transform: scaleX(2);}
 .andrew .tall {transform: scaleY(2);}
+
+div.agreement {
+  background-color: #fff;
+  color: #000;
+  border: 3px inset #fff;
+  min-width: 50em;
+  min-height: 10em;
+  text-align: left;
+  padding-left: .5em;
+  font-family: Sans-Serif;
+}
+.agreement p {margin-top: .5em;}
