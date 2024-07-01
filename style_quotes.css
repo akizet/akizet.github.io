@@ -1,0 +1,66 @@
+summary {list-style: none;}
+details {
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+summary {
+  color: var(--rght-href);
+  font-weight: bold;
+  list-style: none;
+}
+summary::before {content: '↓ ';}
+summary::after {content: ' ↓';}
+details[open] summary::before {content: '↑ ';}
+details[open] summary::after {content: ' ↑';}
+
+div.seekbliss {
+  background-color: #303336;
+  color: #bbb;
+  font-family: Sans-Serif;
+}
+.seekbliss u {
+  color: #fb8064;
+  cursor: not-allowed;
+}
+
+div.east {
+  background-color: #000000b2;
+  color: #fff;
+  font-weight: bold;
+}
+
+div.bro {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+div.emoticon {
+  background-color: #f06;
+  color: #ff0;
+  font-family: 'Impact', fantasy;
+}
+.emoticon p {font-size: x-large;}
+
+div.fiction {
+  background-color: #000;
+  color: #0f0;
+  border: 1px solid #0f0;
+  font-family: Monospace;
+}
+
+div.unused {
+  background-color: var(--glob-back);
+  color: #ff0;
+  border-color: #ff0;
+  font-family: Monospace;
+}
+
+div.andrew {
+  background-color: #fff;
+  color: #000;
+  font-family: Sans-Serif;
+}
+.andrew :is(.wide, .tall) {display: inline-block;}
+.andrew .wide {transform: scaleX(2);}
+.andrew .tall {transform: scaleY(2);}

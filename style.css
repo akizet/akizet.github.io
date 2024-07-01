@@ -30,11 +30,15 @@ div {
   border-radius: 0 1em 1em 0;
   color: var(--left-text);
 }
-.right {
+div:not(.left) {
   float: right;
+  clear: right;
   text-align: right;
   border-color: var(--glob-back);
-  border-right: none;
+  border-right: none !important; /* !important to override style_quotes.css */
+  margin-bottom: 1em;
+}
+.right {
   background-color: var(--rght-back);
   color: var(--rght-text);
 }
