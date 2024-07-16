@@ -3,14 +3,13 @@
   <head>
     <title>migration.html</title>
     <style>
-      :root {color-scheme: light dark;}
-      :root:has(.light:focus) {color-scheme: light;}
-      :root:has(.dark:focus) {color-scheme: dark;}
-    </style>
+      :root:has(:checked) {background-color: #000; color: #fff;}
+      :root:has(:checked) a {color: #88f;}
+     </style>
   </head>
   <body>
-    <p><small>sighted users: click on underlined text or tab to it for <u class='light' tabindex='0'>light theme</u> or <u class='dark' tabindex='0'>dark theme</u>.<br />
-    additionally, all users should read about <a href='https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection'>GitHub Pages' data collection</a>.</small></p>
+    <p><small><label>check this box for dark theme: <input type='checkbox' /></label>.<br />
+    for privacy policy, see <a href='https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection'>GitHub Pages' data collection</a>.</small></p>
     <h1>migration</h1>
     <p>&emsp;<i>akizet, 2024</i></p>
     <p>i have moved from Discord. please no longer contact me there.</p>
